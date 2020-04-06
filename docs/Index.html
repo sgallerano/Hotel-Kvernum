@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Kvernum Hotel</title>
+<!--Favicom colocar-->
+
+</head>
+<body>
+    <div id="top">
+
+    </div>
+    <nav>
+      <!-- Logo -->
+      <a href="#top">
+        <h1>
+          <img src="images/logo-hotel.png" alt="Kvernum Hotel">
+        </h1>
+      </a>
+      <!--bloque cotización copiado-->
+      <div>
+        <h2>Conversor de moneda.</h2>
+        <p>
+          <label>Euros</label>
+          <input id="inputEuros" type="number" placeholder="Euros" oninput="eurosDolares(this.value)" onchange="eurosDolares(this.value)">
+        </p>
+        <p>
+          <label>Dolares</label>
+          <input id="inputDolares" type="number" placeholder="Dolares" oninput="dolaresEuros(this.value)" onchange="dolaresEuros(this.value)">
+        </p>
+      </div>
+      <!--Menu de navegación-->
+      <ul>
+          <li><a href="#Inicio">Inicio</a></li>
+          <li><a href="#Habitaciones">Habitaciones</a></li>
+          <li><a href="#Tarifas">Tarifas</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
+          <li><a href="Nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+    <header>
+        <!--Slider + imagenes-->
+        <img src="images/header_01.jpg" alt="Vista fachada Kverum">
+    </header>
+    <main>
+        <!--Slider habitaciones + ventana modal-->
+        <section id="Habitaciones">
+          <img src="images/habitacion-1.jpg" alt="Habitacion 1">
+          <!-- 
+          <img src="images/habitacion-2.jpg" alt="Habitacion 2">
+          <img src="images/habitacion 3.jpg" alt="Habitacion 3">
+          -->
+        </section>
+        <!--Redes Sociales  falta icono en imagen como linkear?-->
+        <aside>
+          <ul>
+            <li><a href="https://twitter.com/Kverum-hotel" target="_blank">Kverum/tiwtter</a></li>
+            <li><a href="https://www.facebook.com/Kverum-hotel" target="_blank">Kverum/Facebook</a></li>
+            <li><a href="https://www.instagram.com/Kverum-hotel" target="_blank">Kverum/Instagram</a></li>
+            <li><a href="https://www.google.com.ar/maps/preview" target="_blank">Kverum/Ubicacion</a></li>
+            
+          </ul>
+        </aside>
+
+        <!--Tabla de valores-->
+        <section id="Tarifas">
+          <table>
+            <tr>
+              <td>HABITACION</td>
+              <td>PRECIO</td>
+              <td>SERVICIO3</td>        
+            </tr>
+            <tr>
+              <td>Verns I</td>
+              <td>50 u$d por noche</td>
+              <td>1 cama matrimonial</td>
+            </tr>
+            <tr>
+              <td>Verns II</td>
+              <td>75 u$d por noche</td>
+              <td>1 cama matrimonial + 1 cama 1 plaza</td>
+            </tr>
+            <tr>
+              <td>Sweet Monialk</td>
+              <td>120 u$d por noche</td>
+              <td>1 cama matrimonial + servicio al cuarto</td>
+            </tr>
+          </table>
+
+        </section>
+
+        <div>
+        <!--Almanaque/Agenda-->
+        <aside>
+         <!--No lo se--> 
+        </aside>
+        </div>
+        
+    </main>
+    <footer>
+      <aside id="Contacto">
+        <!--Formulario de Contacto-->
+          <div>
+            <form action="a-donde-ir.php" method="post">
+              <input type="date" name="checkin">
+              <input type="date" name="checkout">
+              <input type="text" placeholder="Nombre y apellido">
+              <textarea name="mensaje" id="Consulta" cols="30" rows="10">
+                Consulta...
+              </textarea>
+              <input type="text" placeholder="Teléfono">
+              <input type="email" placeholder="Email">
+              <input type="submit" value="Enviar Consulta">
+            </form>
+          </div>
+        </aside>
+        <form id="Formulario-Contacto"></form>
+
+    </footer>
+</body>
+
+</html>
